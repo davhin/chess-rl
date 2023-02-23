@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "chess-rl"
+version = "0.1.0"
+description = "A reinforcement learning algo that plays chess."
+authors = ["David Hinrichs <dvd.hnrchs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "chess_rl"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.3"
+python-chess = "^1.999"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
